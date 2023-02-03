@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+    border: solid 1px rgb(47, 51, 54);
+}
+.wd-title {
+    font-size: 20px;
+    color: white;
+    margin: 12px 0 0 16px;
+}
+.wd-handle {
+    font-size: 13px;
+    color: lightgray;
+    margin: 12px 0 12px 16px;
+    border-bottom: lightgray 1px solid;
+    padding-bottom: 12px;
+
+}
+.wd-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 12px 0 0 16px;
+    float: left;
+}
+
+.wd-names {
+    float: left;
+    margin: 12px 0 0 16px;
+}
+
+.wd-author {
+    font-size: 15px;
+    color: white;
+
+}
+.wd-author-handle {
+    font-size: 15px;
+    color: lightgray;
+    margin: 0 0 0 6px;
+}
+.wd-date {
+    font-size: 10px;
+    color: lightgray;
+    margin: 0 0 0 6px;
+}
+
+.wd-content {
+    font-size: 15px;
+    color: white;
+    max-width: 506px;
+    margin: 12px 0 12px 16px;
+    float: left;
+}
+
+.wd-image {
+    width: 504px;
+    height: 264px;
+    border-radius: 12px;
+    margin: 12px 0 0 16px;
+    position: relative;
+    left: 72px;
+}
+
+.wd-title-2 {
+    font-size: 15px;
+    color: white;
+    margin: 12px 0px 0 0px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.wd-text {
+    font-size: 15px;
+    color: lightgray;
+    max-width: 506px;
+    border: solid 1px lightgray;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.wd-icon {
+    width: 16px;
+    height: 16px;
+    margin: 12px 0 0 16px;
+}
+
+.wd-heart {
+    color: red;
+    width: 16px;
+    height: 16px;
+    margin: 12px 0 0 16px;
+}
+.wd-number {
+    font-size: 14px;
+    color: lightgray;
+    margin: 0 0 0 6px;
+}
+
+.wd-last {
+    position: relative;
+    left: 72px;
+}
