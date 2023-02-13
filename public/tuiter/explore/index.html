@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"/>
+
 <html>
 
 <head>
@@ -8,68 +12,274 @@
 </head>
 
 <body>
-<input type="text" class="wd-search-input" placeholder="Search Twitter" />
-<a href="explore-settings.html" class="wd-link-setting" style="float: right;">&#9881;</a> <br /><br />
 
-<div class="wd-links">
-    <a class="wd-link-active">For You</a>
-    <a class="wd-link">Trending</a>
-    <a class="wd-link">COVID-19</a>
-    <a class="wd-link">News</a>
-    <a class="wd-link">Sports</a>
-    <a class="wd-link">Entertainment</a>
-</div>
+<div class="wd-whole">
+    <!--left sidebar-->
+    <div class="left-container" >
+        <div class="row override-left-row" >
+            <div class="left-item">
+                <div>
+                    <a class="" href="#news">
+                        <i style="font-size: 16px" class="fab fa-twitter fa-2x left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                </div>
+            </div>
 
+            <div class="left-item">
+                <div>
+                    <a class="" href="#news">
+                        <i class="fas fa-home mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Home
+                </div>
+            </div>
 
-<div>
-    <div style="margin-left: 16px; margin-top: 40px">
+            <div class="left-item left-active">
+                <div>
+                    <a  href="#explore">
+                        <i style="color: white" class="fas fa-newspaper mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Explore
+                </div>
+            </div>
 
-        <div class="wd-section">
-            <span class="wd-topic">Trending in Science</span>
-            <h2 class="wd-author-title">Scientists Found Evidence of Water on Mars</h2>
-<!--            <span class="wd-author">The New York Times</span>-->
-            <span class="wd-tweets">5,218 Tweets</span>
-            <img src="mars-water.jpg" class="wd-image" />
+            <div class="left-item ">
+                <div>
+                    <a  href="#profile">
+                        <i  class="fas fa-newspaper mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Notifications
+                </div>
+            </div>
+
+            <div class="left-item ">
+                <div>
+                    <a  href="#settings">
+                        <i  class="fas fa-cog mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Messages
+                </div>
+            </div>
+
+            <div class="left-item ">
+                <div>
+                    <a  href="#settings">
+                        <i  class="fas fa-cog mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Bookmarks
+                </div>
+            </div>
+
+            <div class="left-item ">
+                <div>
+                    <a  href="#settings">
+                        <i class="fas fa-cog mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Lists
+                </div>
+            </div>
+
+            <div class="left-item ">
+                <div>
+                    <a  href="#settings">
+                        <i  class="fas fa-cog mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    Profile
+                </div>
+            </div>
+
+            <div class="left-item ">
+                <div>
+                    <a  href="#settings">
+                        <i class="fas fa-cog mr-2 left-title"></i>
+                    </a>
+                </div>
+                <div class="left-words d-none d-xxl-block d-xl-block fa-2x">
+                    More
+                </div>
+            </div>
+
         </div>
 
-        <div class="wd-section">
-            <span class="wd-topic">Sports Trending</span>
-            <h2 class="wd-author-title">Michael Jordan's Record-Breaking Career</h2>
-            <span class="wd-tweets">55.5K Tweets</span>
-            <img src="michael_jordan.jpg" class="wd-image" />
+        <div class="col-10 pt-4">
+            <button type="submit" class="btn btn-primary override-left-button" >Tweet</button>
+        </div>
+    </div>
+
+    <!--middle content-->
+    <div class="middle-container">
+        <div style="margin-bottom: 10px">
+            <div class="search-container">
+                <i class="icon fa fa-search"></i>
+                <input type="text" class="wd-override-search-input" placeholder="Search Twitter" >
+            </div>
+
+            <a href="explore-settings.html" class="wd-link-setting" style="float: right;"><i class="fas fa-cog mr-2"></i></a>
         </div>
 
-        <div class="wd-section">
-            <span class="wd-author">The Wall Street Journal</span>
-            <span class="wd-tweets"> Yesterday</span>
-            <h2 class="wd-author-title">The Presidential Election and the Impact on the Economy</h2>
-            <img src="election.jpg" class="wd-image" />
-        </div>
-
-        <div class="wd-section">
-            <span class="wd-author">The New York Times</span>
-            <span class="wd-tweets"> Yesterday</span>
-            <h2 class="wd-author-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h2>
-            <img src="cuomo.jpg" class="wd-image" />
-        </div>
-
-        <div class="wd-section">
-            <span class="wd-topic">COVID-19</span>
-            <span class="wd-tweets"> LIVE</span>
-            <h2 class="wd-author-title">The Latest News on the Coronavirus</h2>
-            <img src="coronavirus.jpg" class="wd-image" />
-        </div>
-
-        <div class="wd-section">
-            <span class="wd-topic">Genshin Impact</span>
-            <span class="wd-tweets"> LIVE</span>
-            <h2 class="wd-author-title">Genshin Impact: The Latest Version Release </h2>
-            <img src="genshin-impact.jpg" class="wd-image" />
+        <div class="wd-links">
+            <a class="wd-link-active">For You</a>
+            <a class="wd-override-link">Trending</a>
+            <a class="wd-override-link">COVID-19</a>
+            <a class="wd-override-link">News</a>
+            <a class="wd-override-link">Sports</a>
+            <a class="wd-override-link">Entertainment</a>
         </div>
 
 
+        <div>
+            <div style="margin-left: 16px; margin-top: 40px">
+
+                <div class="wd-middle-top">
+                    <img src="middle-top.png" class="wd-middle-image" />
+                    <p  class="middle-top-words">Genshin Impact</p>
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-topic">Trending in Science</span>
+                    <h2 class="wd-author-title">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</h2>
+                    <span class="wd-tweets">5,218 Tweets</span>
+                    <img src="mars-water.jpg" class="wd-image" />
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-topic">Sports Trending</span>
+                    <h2 class="wd-author-title">Michael Jordan's Record-Breaking Career</h2>
+                    <span class="wd-tweets">55.5K Tweets</span>
+                    <img src="michael_jordan.jpg" class="wd-image" />
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-author">The Wall Street Journal</span>
+                    <span class="wd-tweets"> Yesterday</span>
+                    <h2 class="wd-author-title">The Presidential Election and the Impact on the Economy</h2>
+                    <img src="election.jpg" class="wd-image" />
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-author">The New York Times</span>
+                    <span class="wd-tweets"> Yesterday</span>
+                    <h2 class="wd-author-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</h2>
+                    <img src="cuomo.jpg" class="wd-image" />
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-topic">COVID-19</span>
+                    <span class="wd-tweets"> LIVE</span>
+                    <h2 class="wd-author-title">The Latest News on the Coronavirus</h2>
+                    <img src="coronavirus.jpg" class="wd-image" />
+                </div>
+
+                <div class="wd-section">
+                    <span class="wd-topic">Genshin Impact</span>
+                    <span class="wd-tweets"> LIVE</span>
+                    <h2 class="wd-author-title">Genshin Impact: The Latest Version Release </h2>
+                    <img src="genshin-impact.jpg" class="wd-image" />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--right sidebar-->
+    <div class="container-fluid right-container">
+            <div class=" d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-block fa-2x">
+                <input type="search" class="form-control" placeholder="Who to follow" style="border: grey solid 1px">
+
+                <div class="follow-item">
+                    <div class="col-xs-4 follow-avatar">
+                        <img src="./java-logo.png" class="avatar">
+                        <div style="margin-left: 6px">
+                            <div style="display: flex">
+                                <h6>JAVA</h6>
+                                <img src="./mark.png" style="width: 16px; height: 16px; margin-left: 6px" class="avatar"></div>
+                            <div style="font-size:16px">@Java</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary override-button-right">Follow</button>
+                </div>
+
+                <div class="follow-item">
+                    <div class="col-xs-4 follow-avatar">
+                        <img src="./relativity-logo.png" class="avatar">
+                        <div style="margin-left: 6px">
+                            <div style="display: flex">
+                                <h6>Relativity Space</h6>
+                                <img src="./mark.png" style="width: 16px; height: 16px; margin-left: 6px" class="avatar">
+                            </div>
+                            <div style="font-size:16px">@relativityspace</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary override-button-right">Follow</button>
+                </div>
+
+                <div class="follow-item">
+                    <div class="col-xs-4 follow-avatar">
+                        <img src="./virgin-logo.png" class="avatar">
+                        <div style="margin-left: 6px">
+                            <div style="display: flex">
+                                <h6>Virgin Galactic</h6>
+                                <img src="./mark.png" style="width: 16px; height: 16px; margin-left: 6px" class="avatar">
+                            </div>
+                            <div style="font-size:16px">@virgingalactic</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary override-button-right">Follow</button>
+                </div>
+
+                <div class="follow-item">
+                    <div class="col-xs-4 follow-avatar">
+                        <img src="./nasa.png" class="avatar">
+                        <div style="margin-left: 6px">
+                            <div style="display: flex">
+                                <h6>NASA</h6>
+                                <img src="./mark.png" style="width: 16px; height: 16px; margin-left: 6px" class="avatar">
+                            </div>
+                            <div style="font-size:16px">@NASA</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary override-button-right">Follow</button>
+                </div>
+
+                <div class="follow-item">
+                    <div class="col-xs-4 follow-avatar">
+                        <img src="./Tesla_logo.png" class="avatar">
+                        <div style="margin-left: 6px">
+                            <div style="display: flex">
+                                <h6>Tesla</h6>
+                                <img src="./mark.png" style="width: 16px; height: 16px; margin-left: 6px" class="avatar">
+                            </div>
+                            <div style="font-size:16px">@Tesla</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary override-button-right">Follow</button>
+                </div>
+
+
+            </div>
     </div>
 </div>
+
+
 </body>
 
 </html>
+
