@@ -101,6 +101,23 @@
     margin-left: 10px;
 }
 
+.wd-edit-author-title {
+    font-size: 15px;
+    margin-right: 6px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.wd-author-bio {
+    width: 550px;
+    /*height: 100px;*/
+}
+
+.wd-author-location {
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
 body {
     margin-top: 10px;
 
@@ -246,6 +263,11 @@ body {
     display: flex;
 }
 
+.home-bottom-icon-red {
+    display: flex;
+    color: red;
+}
+
 .new-list-group-item {
     border: none!important;
     margin-right:70px ;
@@ -254,4 +276,9 @@ body {
 
 .margin-left-4px {
     margin-left: 4px;
+}
+
+.delete_tuit {
+    position: relative;
+    left: 310px;
 }

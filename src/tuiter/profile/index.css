@@ -1,0 +1,67 @@
+.wd-profile-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wd-edit-username {
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.wd-edit-profile-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-profile-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-profile-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-profile-image {
+    width: 100%;
+    height: 50%;
+}
+
+.wd-profile-avatar {
+    z-index: 2;
+    transform: translateY(-35px);
+    width: 65px;
+    height: 65px;
+}
+
+.wd-go-back {
+    border: none;
+    background-color: white;
+}
+
+
+.Edit {
+    background-color: white;
+    border-radius: 50px;
+    border-color: gray;
+    width: 100px;
+    height: 40px;
+}
+
+.save {
+    background-color: white;
+    border-radius: 20px;
+    border-color: gray;
+    width: 70px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.wd-profile-arrow {
+    margin-right: 20px;
+    font-size: 30px;
+}

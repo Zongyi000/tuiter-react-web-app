@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 2,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.png",
+    "big_image": "starship.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 3,
+    "topic": "Game Development",
+    "userName": "Zongyi Jiang",
+    "time": "6h",
+    "title": "Genshin Impact is a good and expensive game",
+    "image": "owner.jpg",
+    "big_image": "genshin-impact.jpg",
+    "liked": true,
+    "replies": 2342,
+    "retuits": 2445,
+    "likes": 1345,
+    "handle": "@ZYJ_Official",
+    "tuit": "Genshin Impact rendered as shown here on the right showing two instances of posts. Create an array called posts that contains all the information you would need to render the two posts shown here on the right. "
+  },
+  {
+    "_id": 4,
+    "topic": "Web Development",
+    "userName": "Zongyi Jiang",
+    "time": "12h",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "image": "js-icon.png",
+    "big_image": "nodejs-icon.png",
+    "liked": false,
+    "replies": 5632,
+    "retuits": 123,
+    "likes": 666,
+    "handle": "@ZYJ_Official",
+    "tuit": "JS rendered as shown here on the right showing two instances of posts. Create an array called posts that contains all the information you would need to render the two posts shown here on the right. "
+  }
+]
