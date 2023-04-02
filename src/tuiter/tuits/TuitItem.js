@@ -1,7 +1,8 @@
 import React from "react";
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -17,7 +18,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="home-center">
@@ -41,7 +42,7 @@ const TuitItem = (
                     <h2 className="wd-author-title">{tuit.title}</h2>
                 </div>
 
-                {tuit.big_image ? <img alt="" src={`/images/${tuit.big_image}`} className="wd-home-center-image"/> : null}
+                {tuit.image ? <img alt="" src={`/images/${tuit.image}`} className="wd-home-center-image"/> : null}
 
                 <p>{tuit.content}</p>
 

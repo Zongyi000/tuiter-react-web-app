@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
     {
@@ -12,6 +14,7 @@ const TuitStats = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
     return (
         <div className="home-bottom">
             <a className="list-group-item new-list-group-item" href="/">
@@ -19,13 +22,15 @@ const TuitStats = (
             <a className="list-group-item new-list-group-item" href="/">
                 <i className="bi bi-arrow-left-right home-bottom-icon">{tuit.retuits}</i></a>
 
-            {tuit.liked ? <a className="list-group-item new-list-group-item" href="/">
-                <i className="bi bi-heart-fill home-bottom-icon-red">{tuit.likes + 1}</i></a> :
-                <a className="list-group-item new-list-group-item" href="/">
-                <i className="bi bi-heart home-bottom-icon">{tuit.likes}</i></a>}
+
+            <div className="new-list-group-item">
+                <i onClick={() => dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1}))} className="bi bi-heart-fill me-2 text-danger"></i>
+                {tuit.likes}
+            </div>
 
             <a className="list-group-item new-list-group-item" href="/">
                 <i className="bi bi-forward home-bottom-icon"></i></a>
+
         </div>
     );
 }

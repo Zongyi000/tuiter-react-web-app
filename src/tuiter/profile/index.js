@@ -11,6 +11,10 @@ const ProfileComponent = () => {
     const goBack = () => {
         navigate(-1);
     }
+    const GoEditProfile = () => {
+        navigate("/tuiter/edit-profile")
+    }
+
     return(
         <>
             <div className="wd-profile-flex ">
@@ -28,7 +32,7 @@ const ProfileComponent = () => {
                 <div className="wd-profile-flex-col">
                     <div className="wd-profile-top">
                         <img alt="" src={`/images/${profileArray.profilePicture}`} className="avatar wd-profile-avatar" />
-                        <button className="Edit">Edit Profile</button>
+                        <button className="Edit" onClick={GoEditProfile}>Edit Profile</button>
                     </div>
                     <h6 className="margin-left-4px">{profileArray.firstName} {profileArray.lastName}</h6>
                     <div className="margin-left-4px">{profileArray.handle}</div>

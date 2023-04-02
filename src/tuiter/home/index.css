@@ -271,12 +271,15 @@ body {
 .new-list-group-item {
     border: none!important;
     margin-right:70px ;
-
+    display: flex;
 }
 
 .margin-left-4px {
     margin-left: 4px;
 }
+
+
+
 
 .delete_tuit {
     position: relative;
