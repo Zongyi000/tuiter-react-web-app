@@ -22,10 +22,13 @@ const TuitStats = (
             <a className="list-group-item new-list-group-item" href="/">
                 <i className="bi bi-arrow-left-right home-bottom-icon">{tuit.retuits}</i></a>
 
-
             <div className="new-list-group-item">
-                <i onClick={() => dispatch(updateTuitThunk({...tuit, likes: tuit.likes + 1}))} className="bi bi-heart-fill me-2 text-danger"></i>
-                {tuit.likes}
+                {tuit.liked === true ?
+                        <i onClick={() => dispatch(updateTuitThunk({...tuit, liked: false, likes: tuit.likes - 1}))} className="bi bi-heart-fill home-bottom-icon-red">{tuit.likes - 1}</i>
+                    :
+
+                        <i onClick={() => dispatch(updateTuitThunk({...tuit, liked: true, likes: tuit.likes + 1}))} className="bi bi-heart home-bottom-icon">{tuit.likes + 1}</i>
+                }
             </div>
 
             <a className="list-group-item new-list-group-item" href="/">
