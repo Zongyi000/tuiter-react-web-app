@@ -11,8 +11,8 @@ export const createTuit = async (tuit) => {
 
 export const findTuits  = async ()     => {
     const response = await axios.get(TUITS_API); // send HTTP GET request to TUITS_API
-    const tuits = response.data; // extract JSON array from response from server
-    return tuits;
+     // extract JSON array from response from server
+    return response.data;
 }
 export const deleteTuit = async (tid) => {
     const response = await axios // send HTTP DELETE request to server

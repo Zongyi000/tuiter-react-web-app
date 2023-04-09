@@ -66,25 +66,8 @@ const tuitsSlice = createSlice({
                     ...payload
                 }
             }
-
-
     },
-    reducers: {
-        // we're not going to use the old reducers anymore
-        // deleteTuit(state, action) {
-        //     const index = state
-        //         .findIndex(tuit =>
-        //             tuit._id === action.payload);
-        //     state.splice(index, 1);
-        // },
-        // createTuit(state, action) {
-        //     state.unshift({
-        //         ...action.payload,
-        //         ...templateTuit,
-        //         _id: (new Date()).getTime(),
-        //     })
-        // }
-    }
+    reducers: { }
 });
 
 export const {createTuit, deleteTuit} = tuitsSlice.actions;
